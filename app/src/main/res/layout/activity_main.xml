@@ -1,39 +1,57 @@
-<LinearLayout android:layout_height="match_parent"
+<ScrollView android:layout_height="match_parent"
     android:layout_width="match_parent"
-    android:background="#B9FD95"
     android:orientation="vertical"
+    android:background="@drawable/gradient"
     xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView
-        android:text="EMPLOYEE CODE"
+    <LinearLayout android:layout_height="match_parent"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <TextView
-        android:text="EMPLOYEE NAME"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <TextView
-        android:text="SALARY"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <TextView
-        android:text="DESIGNATION"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <Button
-        android:text="SUBMIT"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android">
 
-</LinearLayout>
+        <EditText
+            android:drawableLeft="@drawable/code"
+            android:drawablePadding="10dp"
+            android:id="@+id/empcode"
+            android:hint="Enter the Employee Code"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:drawableLeft="@drawable/name"
+            android:drawablePadding="10dp"
+            android:id="@+id/empname"
+            android:hint="Enter the Employee name"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:drawableLeft="@drawable/salary"
+            android:drawablePadding="10dp"
+            android:id="@+id/salary"
+            android:hint="Enter the Salary"
+            android:layout_margin="10dp"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+         <EditText
+             android:drawableLeft="@drawable/designation"
+             android:drawablePadding="10dp"
+            android:id="@+id/des"
+            android:hint="Enter the Designation"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:onClick="submitted"
+            android:background="@drawable/buttonstyle"
+            android:layout_margin="40dp"
+            android:text="SUBMIT"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</ScrollView>
